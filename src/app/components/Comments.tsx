@@ -8,7 +8,7 @@ const Comments: FC<CommentsType> = ({comments}) => {
         <div>
             {
                 comments.map(({id, body}) => (<div key={id}>
-                <Link href={'/users/' + id}>{body}</Link>
+                <Link href={'/comments/' + id}>{body}</Link>
 
                     </div>))
             }
